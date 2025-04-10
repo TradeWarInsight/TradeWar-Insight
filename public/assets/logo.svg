@@ -1,0 +1,142 @@
+<svg id="logo-svg" width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0c4a6e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#040d21" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#0ea5e9" flood-opacity="0.5"/>
+    </filter>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#0ea5e9" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="#040d21"/>
+  <circle cx="200" cy="200" r="180" fill="url(#bgGlow)"/>
+  <g class="stars">
+    <circle cx="80" cy="60" r="1" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="120" cy="40" r="1.2" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="160" cy="30" r="0.8" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="200" cy="20" r="1.5" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="240" cy="30" r="0.7" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="280" cy="40" r="1.3" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="320" cy="60" r="1" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="60" cy="100" r="1.2" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="40" cy="140" r="0.8" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="30" cy="180" r="1" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="40" cy="220" r="1.5" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="30" cy="260" r="0.7" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="40" cy="300" r="1.3" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="60" cy="340" r="1" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="340" cy="100" r="0.8" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="360" cy="140" r="1" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="370" cy="180" r="1.2" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="360" cy="220" r="0.7" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="370" cy="260" r="1.5" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="360" cy="300" r="1" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="340" cy="340" r="1.3" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="100" cy="360" r="0.8" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="140" cy="370" r="1" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="180" cy="380" r="1.2" fill="#f0f9ff" opacity="0.9"/>
+    <circle cx="220" cy="370" r="0.7" fill="#f0f9ff" opacity="0.8"/>
+    <circle cx="260" cy="380" r="1.5" fill="#f0f9ff" opacity="0.7"/>
+    <circle cx="300" cy="370" r="1" fill="#f0f9ff" opacity="0.9"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="200" cy="200" r="120" fill="#0c4a6e" fill-opacity="0.3" stroke="url(#blueGradient)" stroke-width="2"/>
+    <ellipse cx="200" cy="200" rx="120" ry="120" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.4" fill="none"/>
+    <ellipse cx="200" cy="200" rx="90" ry="90" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.3" fill="none"/>
+    <ellipse cx="200" cy="200" rx="60" ry="60" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.2" fill="none"/>
+    <ellipse cx="200" cy="200" rx="120" ry="40" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.4" fill="none"/>
+    <ellipse cx="200" cy="200" rx="120" ry="80" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.3" fill="none"/>
+    <ellipse cx="200" cy="200" rx="120" ry="40" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.4" fill="none" transform="rotate(60 200 200)"/>
+    <ellipse cx="200" cy="200" rx="120" ry="40" stroke="#7dd3fc" stroke-width="0.8" stroke-opacity="0.4" fill="none" transform="rotate(-60 200 200)"/>
+  </g>
+  <g opacity="0.7">
+    <path d="M140 140C150 130 155 140 160 135C170 125 175 130 180 125C185 120 190 125 195 120" stroke="#7dd3fc" stroke-width="1.5" fill="none"/>
+    <path d="M170 180C175 190 170 200 175 210C180 220 175 230 180 240" stroke="#7dd3fc" stroke-width="1.5" fill="none"/>
+    <path d="M210 130C215 125 220 130 225 125C230 120 235 125 240 120" stroke="#7dd3fc" stroke-width="1.5" fill="none"/>
+    <path d="M220 160C225 170 220 180 225 190C230 200 225 210 230 220" stroke="#7dd3fc" stroke-width="1.5" fill="none"/>
+    <path d="M250 140C260 135 265 145 275 140C285 135 290 145 300 140" stroke="#7dd3fc" stroke-width="1.5" fill="none"/>
+    <path d="M280 220C285 225 290 220 295 225" stroke="#7dd3fc" stroke-width="1.5" fill="none"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M150 140C170 150 190 140 210 150C230 160 250 150 270 160" stroke="url(#goldGradient)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M150 260C170 250 190 260 210 250C230 240 250 250 270 240" stroke="url(#greenGradient)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M160 170C180 180 200 170 220 180" stroke="url(#goldGradient)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M180 230C200 220 220 230 240 220" stroke="url(#greenGradient)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+    <circle cx="150" cy="140" r="3" fill="#f59e0b"/>
+    <circle cx="190" cy="140" r="3" fill="#f59e0b"/>
+    <circle cx="230" cy="160" r="3" fill="#f59e0b"/>
+    <circle cx="270" cy="160" r="3" fill="#f59e0b"/>
+    <circle cx="150" cy="260" r="3" fill="#22c55e"/>
+    <circle cx="190" cy="260" r="3" fill="#22c55e"/>
+    <circle cx="230" cy="240" r="3" fill="#22c55e"/>
+    <circle cx="270" cy="240" r="3" fill="#22c55e"/>
+    <circle cx="160" cy="170" r="2" fill="#f59e0b"/>
+    <circle cx="200" cy="170" r="2" fill="#f59e0b"/>
+    <circle cx="220" cy="180" r="2" fill="#f59e0b"/>
+    <circle cx="180" cy="230" r="2" fill="#22c55e"/>
+    <circle cx="220" cy="230" r="2" fill="#22c55e"/>
+    <circle cx="240" cy="220" r="2" fill="#22c55e"/>
+  </g>
+  <g>
+    <path d="M100 280C120 270 140 280 160 260C180 240 200 250 220 230C240 210 260 220 280 200C300 180" stroke="url(#purpleGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M100 290C120 280 140 290 160 270C180 250 200 260 220 240C240 220 260 230 280 210C300 190" stroke="#9333ea" stroke-width="1" fill="none" stroke-opacity="0.5" stroke-dasharray="2 2"/>
+    <path d="M100 270C120 260 140 270 160 250C180 230 200 240 220 220C240 200 260 210 280 190C300 170" stroke="#9333ea" stroke-width="1" fill="none" stroke-opacity="0.5" stroke-dasharray="2 2"/>
+    <circle cx="160" cy="260" r="4" fill="#a855f7"/>
+    <circle cx="220" cy="230" r="4" fill="#a855f7"/>
+    <circle cx="280" cy="200" r="4" fill="#a855f7"/>
+    <circle cx="160" cy="260" r="6" stroke="#a855f7" stroke-width="1" fill="none"/>
+    <circle cx="220" cy="230" r="6" stroke="#a855f7" stroke-width="1" fill="none"/>
+    <circle cx="280" cy="200" r="6" stroke="#a855f7" stroke-width="1" fill="none"/>
+  </g>
+  <g opacity="0.6">
+    <path d="M160 260L190 260" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M220 230L230 240" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M280 200L270 160" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M160 260L150 260" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M220 230L200 170" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 2"/>
+  </g>
+  <circle cx="200" cy="200" r="150" fill="url(#bgGlow)" opacity="0.3"/>
+  <g opacity="0.4">
+    <path d="M200 50L200 80" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M200 320L200 350" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M50 200L80 200" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M320 200L350 200" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M90 90L110 110" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M290 290L310 310" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M90 310L110 290" stroke="#f0f9ff" stroke-width="0.5"/>
+    <path d="M290 110L310 90" stroke="#f0f9ff" stroke-width="0.5"/>
+  </g>
+  <g filter="url(#textShadow)">
+    <text x="200" y="320" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#f0f9ff" text-anchor="middle" letter-spacing="2">TRADE</text>
+  </g>
+  <g filter="url(#textShadow)">
+    <text x="200" y="350" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#7dd3fc" text-anchor="middle" letter-spacing="3">INSIGHT</text>
+  </g>
+</svg> 
