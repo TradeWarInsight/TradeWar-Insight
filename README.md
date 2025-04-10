@@ -1,13 +1,29 @@
 # TradeWar Insight - Global Trade Analysis Platform
 
 <div align="center">
-  <img src="public/images/logo.png" alt="TradeWar Insight Logo" width="250">
+  <img src="./public/assets/logo.png" alt="TradeWar Insight Logo" width="250">
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   [![Website](https://img.shields.io/badge/Website-tradewarinsight.xyz-blue)](https://www.tradewarinsight.xyz)
   [![Twitter](https://img.shields.io/badge/Twitter-@TradeWarInsight-blue)](https://x.com/TradeWarInsight)
   [![GitHub](https://img.shields.io/badge/GitHub-TradeWarInsight-blue)](https://github.com/TradeWarInsight/TradeWar-Insight)
 </div>
+
+## Table of Contents
+
+- [Overview](#-overview)
+- [Key Features](#key-features)
+- [System Architecture](#️-system-architecture)
+- [Technical Stack](#-technical-stack)
+- [Getting Started](#-getting-started)
+- [Core Features](#-core-features)
+- [Project Structure](#-project-structure)
+- [API Documentation](#-api-documentation)
+- [Development](#-development)
+- [Security Measures](#-security-measures)
+- [Future Roadmap](#-future-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
 ## 🔑 Overview
 
@@ -73,6 +89,9 @@ TradeWar Insight is a comprehensive platform that provides real-time analysis an
 - **Data Visualization**: Recharts for interactive charts
 - **State Management**: React Context and Hooks
 - **API Integration**: Axios for data fetching
+- **Type Safety**: TypeScript for enhanced development
+- **Testing**: Jest and React Testing Library
+- **Code Quality**: ESLint and Prettier
 
 ### Backend
 - **Runtime**: Node.js with Next.js API routes
@@ -80,6 +99,17 @@ TradeWar Insight is a comprehensive platform that provides real-time analysis an
 - **Caching**: Redis for performance optimization
 - **Authentication**: NextAuth.js
 - **API Documentation**: OpenAPI/Swagger
+- **Validation**: Zod for runtime type checking
+- **Monitoring**: Sentry for error tracking
+- **Analytics**: Vercel Analytics
+
+### DevOps
+- **CI/CD**: GitHub Actions
+- **Containerization**: Docker
+- **Deployment**: Vercel
+- **Monitoring**: Datadog
+- **SSL/TLS**: Let's Encrypt
+- **CDN**: Cloudflare
 
 ## 🚀 Getting Started
 
@@ -110,36 +140,100 @@ npx prisma migrate dev
 npm run dev
 ```
 
-## 📊 Core Features
+### Docker Setup
 
-### Trade Flow Analysis
+```bash
+# Build the Docker image
+docker build -t tradewar-insight .
 
-Our platform provides comprehensive trade flow analysis through:
+# Run the container
+docker run -p 3000:3000 tradewar-insight
+```
 
-1. **Data Visualization**
-   - Interactive line charts for trade volumes
-   - Time series analysis of trade patterns
-   - Comparative analysis tools
-
-2. **Impact Assessment**
-   - Trade policy impact evaluation
-   - Economic indicator correlation
-   - Historical trend analysis
-
-3. **Real-time Monitoring**
-   - Live trade flow tracking
-   - Policy change alerts
-   - Market impact assessment
-
-### Data Processing Pipeline
+## 📁 Project Structure
 
 ```
-Raw Data → Validation → Processing → Analysis → Visualization
-   ↓          ↓           ↓           ↓           ↓
-Collection  Cleaning    Transform   Compute     Display
-   ↓          ↓           ↓           ↓           ↓
-Sources    Quality     Feature     Insight    Interactive
-           Checks      Engineering Generation   Charts
+tradewar-insight/
+├── src/
+│   ├── app/              # Next.js 13+ app directory
+│   ├── components/       # Reusable UI components
+│   │   ├── charts/      # Chart components
+│   │   ├── layout/      # Layout components
+│   │   └── ui/          # UI components
+│   ├── lib/             # Library code
+│   ├── styles/          # Global styles
+│   ├── types/           # TypeScript types
+│   └── utils/           # Utility functions
+├── prisma/              # Database schema and migrations
+├── public/              # Static assets
+├── scripts/             # Build and maintenance scripts
+└── tests/              # Test files
+```
+
+## 📚 API Documentation
+
+### Trade Flow API
+
+```typescript
+// Get trade flow data
+GET /api/trade-flows
+Query Parameters:
+  - startDate: string (YYYY-MM-DD)
+  - endDate: string (YYYY-MM-DD)
+  - countries: string[]
+  - indicators: string[]
+
+// Get trade impact analysis
+GET /api/trade-impacts
+Query Parameters:
+  - policyId: string
+  - region: string
+  - timeframe: string
+```
+
+## 🛠 Development
+
+### Available Scripts
+
+```bash
+# Development
+npm run dev         # Start development server
+npm run build      # Build production bundle
+npm run start      # Start production server
+
+# Database
+npm run db:migrate # Run database migrations
+npm run db:seed    # Seed database with sample data
+
+# Testing
+npm run test       # Run tests
+npm run test:watch # Run tests in watch mode
+npm run test:e2e   # Run end-to-end tests
+
+# Code Quality
+npm run lint       # Run ESLint
+npm run format     # Format code with Prettier
+```
+
+### Environment Variables
+
+```env
+# Application
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NODE_ENV=development
+
+# Database
+DATABASE_URL=postgresql://user:password@localhost:5432/tradewar_insight
+
+# Authentication
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-secret-key
+
+# Redis Cache
+REDIS_URL=redis://localhost:6379
+
+# API Keys
+API_KEY=your-api-key
 ```
 
 ## 🔒 Security Measures
@@ -148,30 +242,57 @@ Sources    Quality     Feature     Insight    Interactive
    - End-to-end encryption
    - Secure API endpoints
    - Rate limiting
+   - Input validation
+   - SQL injection prevention
+   - XSS protection
 
 2. **User Security**
    - Authentication
    - Authorization
    - Session management
+   - Password hashing
+   - 2FA support
+
+3. **Infrastructure Security**
+   - HTTPS enforcement
+   - Regular security audits
+   - Dependency scanning
+   - Security headers
+   - CORS policy
 
 ## 📈 Future Roadmap
 
+### Q2 2024
 - Advanced predictive analytics
 - Machine learning integration
 - Enhanced visualization tools
+
+### Q3 2024
 - API marketplace
 - Mobile application
+- Real-time notifications
+
+### Q4 2024
+- Advanced data analytics
+- Custom report generation
+- Integration with external data sources
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+- Code of Conduct
+- Development Process
+- Pull Request Process
+- Coding Standards
+- Testing Requirements
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 ## 📧 Contact
 
 - Website: [https://www.tradewarinsight.xyz](https://www.tradewarinsight.xyz)
 - Twitter: [@TradeWarInsight](https://x.com/TradeWarInsight)
-- GitHub: [TradeWarInsight](https://github.com/TradeWarInsight/TradeWar-Insight) 
+- GitHub: [TradeWarInsight](https://github.com/TradeWarInsight/TradeWar-Insight)
+- Email: support@tradewarinsight.xyz 
