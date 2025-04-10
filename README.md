@@ -294,5 +294,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Website: [https://www.tradewarinsight.xyz](https://www.tradewarinsight.xyz)
 - Twitter: [@TradeWarInsight](https://x.com/TradeWarInsight)
-- GitHub: [TradeWarInsight](https://github.com/TradeWarInsight/TradeWar-Insight)
-- Email: support@tradewarinsight.xyz 
+- GitHub: [TradeWarInsight](https://github.com/TradeWarInsight/TradeWar-Insight) 
