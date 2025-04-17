@@ -1,7 +1,7 @@
 # TradeWar Insight - Global Trade Analysis Platform
 
 <div align="center">
-  <img src="./public/assets/logo.png" alt="TradeWar Insight Logo" width="250">
+  <img src="./public/assets/logo.png" alt="TradeWar Insight Logo" width="400">
   
   [![Website](https://img.shields.io/badge/Website-tradewarinsight.xyz-blue)](https://www.tradewarinsight.xyz)
   [![Twitter](https://img.shields.io/badge/Twitter-@TradeWarInsight-blue)](https://x.com/TradeWarInsight)
