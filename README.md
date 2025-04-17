@@ -2,10 +2,18 @@
 
 <div align="center">
   <img src="./public/assets/logo.png" alt="TradeWar Insight Logo" width="400">
-  
-  [![Website](https://img.shields.io/badge/Website-tradewarinsight.xyz-blue)](https://www.tradewarinsight.xyz)
-  [![Twitter](https://img.shields.io/badge/Twitter-@TradeWarInsight-blue)](https://x.com/TradeWarInsight)
-  [![GitHub](https://img.shields.io/badge/GitHub-TradeWarInsight-blue)](https://github.com/TradeWarInsight/TradeWar-Insight)
+</div>
+
+<div align="center">
+  <a href="https://www.tradewarinsight.xyz" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Website-tradewarinsight.xyz-4A4A4A?style=for-the-badge" alt="Website">
+  </a>
+  <a href="https://x.com/TradeWarInsight" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Twitter-@TradeWarInsight-1DA1F2?style=for-the-badge&logo=twitter" alt="Twitter">
+  </a>
+  <a href="https://github.com/TradeWarInsight/TradeWar-Insight" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/GitHub-TradeWarInsight-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
 </div>
 
 ## Table of Contents
